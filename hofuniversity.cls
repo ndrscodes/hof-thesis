@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{hofuniversityinf}[2014/01/28 Hof University INF Bachelor Thesis]
+\ProvidesClass{hofuniversity}[2014/01/28 Hof University Bachelor Thesis]
 \RequirePackage{tabularx}
 \RequirePackage{makecell}
 \RequirePackage{soul}
