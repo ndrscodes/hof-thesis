@@ -1,4 +1,4 @@
-# Hof University bachelors thesis template
+# Hof University bachelors thesis LaTeX template/documentclass
 
 This latex template is an alternative to the awesome [template](https://github.com/duncanturk/haw-hof-bachelor-latex) by [Christopher Rossbach (duncanturk)](https://github.com/duncanturk). Instead of using separate files for structuring the thesis, it leaves the structure up to you. This allows for more flexibility. Additionally, it only uses a minimal amount of packages, making it compatible with nearly every LaTeX compiler out there. Specifically, i built this template in order to be able to use LuaTeX and XeTeX. This allows you to use packages like [minted](https://ctan.org/pkg/minted) for code highlighting.
 
