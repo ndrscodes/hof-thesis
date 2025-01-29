@@ -1,0 +1,50 @@
+\documentclass[a4paper,final]{hofuniversityinf}
+\usepackage[ngerman]{babel}
+\usepackage[
+    backend=biber,
+    style=alphabetic,
+    sorting=ynt
+]{biblatex}
+
+\title{Die Zahl 42}
+\subtitle{Beweis der Allmächtigkeit}
+\author{
+    Andreas Schmidt\\
+    Alfons-Goppel-Platz 1\\
+    95028 Hof
+}
+\supervisor{
+    Dr.\ Prof.\ Mustermann\\
+    Alfons-Goppel-Platz 1\\
+    95028 Hof
+}
+\course{Test}
+\faculty{Test}
+\date{\today}
+\useborderspec
+%\company{Company} --> this is only required if you need a blocking note.
+
+\begin{document}
+%there are two ways of defining the title, ToC and blocking note sections. Either:
+%\maketitle
+%\pagenumbering{roman} --> switches the page numbering to roman letters
+%\blockingnote --> only if you need a blocking note
+%\maketoc
+%\pagenumbering{arabic}
+
+%OR: \makehead will automatically create the head sections and switch the numbering accordingly.
+%\setblocked --> call this if you need a blocking note after the title.
+\makehead
+
+%uncomment in order to create a blocking note
+
+%creates pages like glossary, table of contents etc.
+%\maketoc{}
+
+\section{Einleitung}
+
+\section{Weiteres Kapitel}
+
+\printbibliography
+
+\end{document}
