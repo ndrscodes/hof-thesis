@@ -11,7 +11,7 @@
 
 \RequirePackage{listings}
 \RequirePackage[toc=false]{glossaries-extra}
-\RequirePackage[colorlinks]{hyperref}
+\RequirePackage[hidelinks]{hyperref}
 \RequirePackage{fontspec}
 \setmainfont{Arial}
 
