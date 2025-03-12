@@ -23,9 +23,15 @@
 \def\thefaculty{}
 \def\thecourse{}
 \def\thesubtitle{}
+\def\thetype{Bachelorarbeit}
+\def\thesptype{\large\textbf{\thesiso{Bachelorarbeit}}}
 \newcommand\subtitle[1]{\def\thesubtitle{\vspace{0.5cm}\large #1}}
 \newcommand\faculty[1]{\def\thefaculty{Fakultät #1\\}}
 \newcommand\course[1]{\def\thecourse{Studiengang #1}}
+\newcommand\type[1]{
+    \def\thetype{#1}
+    \def\thesptype{\large\textbf{\thesiso{#1}}}
+}
 
 \newenvironment{boldenv}
   {\bfseries}
@@ -40,7 +46,7 @@
     \section*{Sperrvermerk} % Von Hand gepflegt
     \vspace{1cm}
     \noindent
-    Die vorliegende Bachelorarbeit mit dem Titel:
+    Die vorliegende \thetype mit dem Titel:
     \vspace{0.5cm}
 
     \noindent
@@ -52,7 +58,7 @@
 
     \vspace{1cm}
     \noindent
-    \textbf{Eine Einsicht in diese Bachelorarbeit ist nicht gestattet. Ausgenommen davon sind die betreuenden Dozenten sowie die befugten Mitglieder des Prüfungsausschusses. Eine Veröffentlichung und Vervielfältigung der Bachelorarbeit – auch in Auszügen – ist nicht gestattet.}
+    \textbf{Eine Einsicht in diese \thetype ist nicht gestattet. Ausgenommen davon sind die betreuenden Dozenten sowie die befugten Mitglieder des Prüfungsausschusses. Eine Veröffentlichung und Vervielfältigung der Bachelorarbeit – auch in Auszügen – ist nicht gestattet.}
     
     \vspace{1cm}
     \noindent
@@ -61,7 +67,7 @@
 }
 
 \renewcommand{\maketitle}{%
-    \newgeometry{left=3cm, right=3cm, top=7.5cm, bottom=5.5cm}
+    \newgeometry{left=3cm, right=3cm, top=6.5cm, bottom=5.5cm}
     \sodef\thesiso{}{4pt}{0em}{0em}
     \begin{titlepage}%
         \begin{center}%
@@ -70,7 +76,7 @@
                 \large \thesubtitle
                 \vspace{5cm}
                 
-                \large\thesiso{\textbf{Bachelorarbeit}}
+                \thesptype
                 \vspace{5mm}
 
                 an der Hochschule für Angewandte Wissenschaften Hof\\
